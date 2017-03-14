@@ -26,7 +26,7 @@ Option 1:
 	// in backend
     mvn spring-boot:run
 
-This is the most complete way to run the application.  You won't even need node or npm installed (initially) to run the application this way.  However, this is the slowest and least friendly to ongoing development.
+This is the simplest but slowest way to run the application.  You won't even need node or npm installed (initially) to run the application this way because as part of the build process npm and node are installed. 
 
 Option 2:
 
@@ -35,7 +35,7 @@ Option 2:
     // in Eclipse IDE
     Eclipse run configuration: main - angular2-spring-boot-starter
 
-Option 2 is preferred during development.  You can work on both the backend and the  frontend and the servers will automatically after you save changes.  This will provide rapid results.
+Option 2 is preferred during development.  You can work on both the backend and the  frontend and the servers will automatically refresh after you save changes.  This will provide rapid results.
 
 Option 3:
 
