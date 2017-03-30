@@ -39,10 +39,8 @@ Option 2 is preferred during development.  You can work on both the backend and 
 
 Option 3:
 
-	// in frontend
-    ng build --env=prod
     // in backend
-    mvn clean package
+    mvn package
     java -jar target/[jar file name]
 
 If you want to work with the fat jar, you can use option 3.
