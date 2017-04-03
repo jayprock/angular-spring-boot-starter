@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.bitbus</groupId>
-	<artifactId>angular2-spring-boot-starter</artifactId>
+	<artifactId>angular-spring-boot-starter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>angular2-spring-boot-starter</name>
-	<description>Starter project for Spring Boot and Angular2</description>
+	<name>angular-spring-boot-starter</name>
+	<description>Starter project for Spring Boot and Angular</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>

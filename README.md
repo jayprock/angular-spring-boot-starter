@@ -1,7 +1,7 @@
-Angular2 / Spring Boot Starter Project
+Angular / Spring Boot Starter Project
 --------------------------------------
 
-This project provides a simple starter for Angular2, Spring Boot projects.  Angular2 is built using the angular-cli.  The Spring Boot backend uses Maven as the build tool.  
+This project provides a simple starter for Angular, Spring Boot projects.  Angular is built using the angular-cli.  The Spring Boot backend uses Maven as the build tool.  
 
 **The specific dependencies in the pom.xml file include:**
 
