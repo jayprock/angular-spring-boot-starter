@@ -1,5 +1,3 @@
-import { REST_PATHS, setRestPaths } from './rest-paths';
-
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
 import { BrowserModule } from '@angular/platform-browser';
@@ -20,7 +18,6 @@ import { VersionInfoComponent } from './version-info/version-info.component';
     HttpModule
   ],
   providers: [
-    { provide: REST_PATHS, useFactory: setRestPaths },
     AppService,
     ServiceErrorHandler
   ],

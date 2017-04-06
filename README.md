@@ -14,8 +14,8 @@ This project provides a simple starter for Angular, Spring Boot projects.  Angul
 **Starter project milestones:**
 
  - Syncs frontend and backend
- - Prefixes all RestControllers with /api/
- - Adds a CORs mapping for localhost:4200 to support Angular2 development mode (for dev-web profile)
+ - Prefix development mode api calls with http://localhost:8080 via angular-cli proxy configuration
+ - Adds a CORs mapping for localhost:4200 to support Angular development mode (for dev-web profile)
  - Provides an Eclipse run configuration that enables the dev-web profile
  - Out of the box, the application will display version info received from the server
 
@@ -31,9 +31,9 @@ This is the simplest but slowest way to run the application.  You won't even nee
 Option 2:
 
 	// in frontend
-    ng serve
+    npm start
     // in Eclipse IDE
-    Eclipse run configuration: main - angular2-spring-boot-starter
+    Eclipse run configuration: main - angular-spring-boot-starter
 
 Option 2 is preferred during development.  You can work on both the backend and the  frontend and the servers will automatically refresh after you save changes.  This will provide rapid results.
 
