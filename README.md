@@ -1,7 +1,7 @@
 Angular / Spring Boot Starter Project
 --------------------------------------
 
-This project provides a simple starter for Angular, Spring Boot projects.  Angular is built using the angular-cli.  The Spring Boot backend uses Maven as the build tool.  
+This project provides a simple starter for Angular, Spring Boot projects.  Out of the box, this starter syncs the frontend and backend and makes a simple REST call to the Spring Boot server.  Angular is built using the angular-cli.  The Spring Boot backend uses Maven as the build tool.  
 
 **The specific dependencies in the pom.xml file include:**
 
@@ -9,17 +9,15 @@ This project provides a simple starter for Angular, Spring Boot projects.  Angul
  - spring-boot-actuator
  - spring-boot-test
  - spring-boot-devtools
- - lombok (to avoid writing getters and setters)
+ - lombok (If you've never used Lombok before then you will have to register it with Eclipse. Just download then double click the jar!))
 
 **Starter project milestones:**
 
  - Syncs frontend and backend
  - Prefix development mode api calls with http://localhost:8080 via angular-cli proxy configuration
- - Adds a CORs mapping for localhost:4200 to support Angular development mode (for dev-web profile)
- - Provides an Eclipse run configuration that enables the dev-web profile
  - Out of the box, the application will display version info received from the server
 
-**Running the application:**
+**There are several ways to run the application.  I recommend option 2 during development:**
 
 Option 1:
 
@@ -35,7 +33,7 @@ Option 2:
     // in Eclipse IDE
     Eclipse run configuration: main - angular-spring-boot-starter
 
-Option 2 is preferred during development.  You can work on both the backend and the  frontend and the servers will automatically refresh after you save changes.  This will provide rapid results.
+This is the preferred way to run the application during development. You can work on both the backend and the frontend and the servers will automatically refresh after you save changes.  This will provide rapid results.
 
 Option 3:
 
