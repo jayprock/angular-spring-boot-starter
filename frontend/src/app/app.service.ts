@@ -1,11 +1,6 @@
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
-
-import { Http, Response } from '@angular/http';
-import { Inject, Injectable } from '@angular/core';
-
-import { Observable } from 'rxjs/Observable'
-import { ServiceErrorHandler } from './service-error-handler';
+import {HttpClient} from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { VersionInfo } from './version-info/version-info';
 import { restPaths } from './rest-paths';
 
@@ -13,13 +8,11 @@ import { restPaths } from './rest-paths';
 export class AppService {
 
   constructor(
-      private http: Http, 
-      private errorHandler: ServiceErrorHandler
+      private http: HttpClient
   ) { }
 
   getVersionInfo() : Observable<VersionInfo> {
-    return this.http.get(restPaths.versionInfo)
-      .map((response: Response) => response.json())
-      .catch(this.errorHandler.handleError);
+    return this.http.get<VersionInfo>(restPaths.versionInfo);
   }
+  
 }

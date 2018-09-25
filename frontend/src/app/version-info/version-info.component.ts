@@ -10,7 +10,7 @@ import { VersionInfo } from './version-info'
 })
 export class VersionInfoComponent implements OnInit {
 
-  private versionInfo: VersionInfo;
+  versionInfo: VersionInfo;
 
   constructor(private appService: AppService) { }
 
